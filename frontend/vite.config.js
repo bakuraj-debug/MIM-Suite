@@ -48,6 +48,7 @@ function devProxy() {
 }
 
 export default defineConfig({
+  base: "./",
   plugins: [react(), devProxy()],
   server: { port: 5173 },
 });

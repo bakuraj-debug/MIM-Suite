@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 import CockpitPage from "./pages/CockpitPage";
 import AdminLayout from "./pages/admin/AdminLayout";
@@ -8,7 +8,7 @@ import BindingsPage from "./pages/admin/BindingsPage";
 import SettingsPage from "./pages/admin/SettingsPage";
 import { Navigate } from "react-router-dom";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     element: <Layout />,
     children: [
